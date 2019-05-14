@@ -8,7 +8,7 @@ services:
       - BUILDBOT_CONFIG_DIR=config
       - BUILDBOT_CONFIG_URL=https://github.com/benharosh/buildbot-docker-example-config/archive/master.tar.gz
       - BUILDBOT_WORKER_PORT=9989
-      - BUILDBOT_WEB_URL=https://5690ed3d.ngrok.io/
+      - BUILDBOT_WEB_URL=http://5690ed3d.ngrok.io/
       - BUILDBOT_WEB_PORT=tcp:port=8010
     links:
       - db
