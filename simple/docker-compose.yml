@@ -38,4 +38,4 @@ services:
     links:
       - buildbot
     volumes:
-      - ./secrets:/buildbot/.ssh
+      - ./secrets:/buildbot/secrets
