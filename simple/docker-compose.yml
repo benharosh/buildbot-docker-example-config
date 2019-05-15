@@ -16,6 +16,9 @@ services:
       - db
     ports:
       - "8010:8010"
+    volumes:
+      - ./secrets:/buildbot/secerts
+
   db:
     env_file:
       - db.env
