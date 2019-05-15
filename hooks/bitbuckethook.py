@@ -3,7 +3,7 @@ import json
 from buildbot.plugins import webhooks
 from buildbot.util import bytes2unicode
 
-class BitBucketHook(webhooks.base):
+class BitBucketHookImpl(webhooks.base):
     def getChanges(self, request):
         payload = self._get_payload(request)
         revision=payload['refChanges'][0]['toHash']
