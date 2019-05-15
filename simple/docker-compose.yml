@@ -17,7 +17,7 @@ services:
     ports:
       - "8010:8010"
     volumes:
-      - ./secrets:/buildbot/secrets
+      - ./secrets:/buildbot/.ssh
 
   db:
     env_file:
