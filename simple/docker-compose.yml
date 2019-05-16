@@ -27,7 +27,7 @@ services:
       - 5432
 
   worker:
-    image: "buildbot/buildbot-worker:master"
+    image: buildbot/buildbot-worker:v1.4.0-py3
     environment:
       BUILDMASTER: buildbot
       BUILDMASTER_PORT: 9989
